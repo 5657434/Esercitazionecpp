@@ -5,19 +5,18 @@
 #include "CRectangle.h"
 #include "CRhombus.h"
 
-const int LISTL = 6;
+const int LISTL=6; 
 
 Quadrilateral* quadList[LISTL];
 
 void Show() {
-
-	int i;
-
-	for (i = 0; i < LISTL; i++)
+	
+	int i; 
+	
+	for (i=0; i<LISTL; i++)
 		quadList[i]->Drawing();
-
+	
 }
-
 
 
 int main() {
@@ -48,51 +47,16 @@ int main() {
 	quadList[4]= &rhoB;
 	quadList[5]= &rhoC;
 
-	//Show();
+	Show();
 	
 	rectA.SetFontSize(20);
 	rectC=rectA;
 	rectB.SetTextArea(a2);
 	rhoB.SetText(t3);
 	
-	rectA.Dump();
-	rectC.Dump();
-
-	if (rectC == rectA){
-		cout << "siamo ugualiii"<<endl;
-	}
-	else
-	{
-		cout << " non siamo uguali" << endl;
-	}
-
+	
 	Show();
 
-	rectA.SetFontSize(4);
-
-	rectA.Dump();
-
-	if (rectC == rectA) {
-		cout << "siamo ugualiii" << endl;
-	}
-	else
-	{
-		cout << " non siamo uguali" << endl;
-	}
-
-	rhoA.SetFontSize(5);
-	rhoB = rhoA;
-
-	if (rhoB == rhoA) {
-		cout << "siamo ugualiii" << endl;
-	}
-	else
-	{
-		cout << " non siamo uguali" << endl;
-	}
-
-
-	void UserInterface();
 
 	return 0;
 
