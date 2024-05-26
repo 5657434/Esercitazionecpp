@@ -175,7 +175,7 @@ float Rhombus::GetDiagS() {
 /// @return side 
 float Rhombus::GetSide() {
 
-	return sqrt(diagL*diagL/4. + diagS*diagS/4.);
+	return sqrtf(diagL*diagL/4 + diagS*diagS/4);
 
 }
 
@@ -212,7 +212,7 @@ void Rhombus::GetDim(float &dL, float &dS) {
 /// @return the area 
 float Rhombus::Area() {
 	
-	return (diagL*diagS/2.);
+	return (diagL*diagS/2);
 }
 
 
@@ -257,7 +257,7 @@ void Rhombus::Dump() {
 void Rhombus::Drawing() {
 	
 	cout << "Rhombus of longer diagonal: " << diagL << ", shorter diagonal: " << diagS << endl;
-	cout<< "With text:  " << tarea->string << " of size: " << tarea->size << endl;
+	cout<< "With text:  " << tarea->string << " of size: " << tarea->size << "\n" << endl;
 
 
 }
